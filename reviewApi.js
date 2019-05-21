@@ -25,10 +25,16 @@ request.onload = function() {
     if(request.status >= 200 && request.status < 400) {
         data.forEach(info => {
             var card = document.createElement('div');
+            card.classList.add('w3-border');
+            card.style.marginLeft = '12rem';
+            card.style.marginRight = '12rem';
+            card.style.color = 'white';
             var heading1 = document.createElement('h1');
             heading1.textContent = info.name;
             heading1.style.color = 'black'
-            heading1.classList.add('w3-teal','w3-center','w3-margin',)
+            heading1.style.marginLeft = '20rem';
+            heading1.style.marginRight = '20rem';
+            heading1.classList.add('w3-teal','w3-center')
             
             var para = document.createElement('li');
             info.name = info.name.substring(0,100);
