@@ -4,6 +4,11 @@ var container = document.createElement('div');
 
 var logo = document.createElement('img');
 logo.src = 'shutterstock.jpg';
+logo.style.display = 'block'; 
+logo.style.marginLeft = 'auto';
+logo.style.marginRight = 'auto';
+logo.style.height = '500px';
+logo.style.width = '700px';
 
 ironmanDiv.appendChild(container);
 container.appendChild(logo);
