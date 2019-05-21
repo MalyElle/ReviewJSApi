@@ -26,6 +26,7 @@ request.onload = function() {
             
         });
     } else {
-        alert('VIRUS!')
+        alert('VIRUS!');
     }
 }
+request.send();
